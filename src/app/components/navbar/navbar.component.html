@@ -1,0 +1,27 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <span mat-line>home</span>
+      </a>
+
+      <a mat-list-item>
+        <mat-icon mat-list-icon>backup</mat-icon>
+        <span mat-line>Backup</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-toolbar color="secondary">
+    <button
+      mat-icon-button
+      (click)="sidenav.open()"
+      fxHide="false"
+      fxHide.gt-sm
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span> Big Header</span>
+    <span class="blank-grow"></span>
+  </mat-toolbar>
+</mat-sidenav-container>
