@@ -16,3 +16,18 @@
   mat-nav-list {
     width: 300px;
   }
+
+  .links {  
+    margin-left: 25px;
+  }
+
+  .nav-button {
+    font-size: 18px;
+    padding: 0px 30px 0px 30px;
+  }
+
+  .nav-button:hover {
+    color: #4e9f3d;
+    transition: 0.5s;
+  }
+  
