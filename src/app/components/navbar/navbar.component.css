@@ -26,7 +26,12 @@
     padding: 0px 30px 0px 30px;
   }
 
-  .nav-button:hover {
+  .nav-button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-button:hover a{
     color: #4e9f3d;
     transition: 0.5s;
   }
