@@ -9,5 +9,8 @@ A simple application written in Angular.js, it is a repository of movies and act
 
 ## Setup
 To run this project, install it locally using npm:
+
+```
 $ npm install
 $ npm start
+```
