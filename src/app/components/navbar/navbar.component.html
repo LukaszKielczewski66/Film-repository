@@ -4,13 +4,11 @@
       <span>MOVIES </span><span style="color: #4e9f3d"> HUB</span>
     </p>
   </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.gt-xs>
-    <button mat-icon-button (click)="onToggleSidenav()">
+  <div fxFlex fxLayout fxLayoutAlign="end">
+    <button fxHide.gt-xs mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
-  </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+    <ul fxHide.xs fxLayout fxLayoutGap="15px" class="navigation-items">
       <li>
         <a routerLink="/movies">Movies</a>
       </li>

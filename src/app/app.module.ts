@@ -11,12 +11,18 @@ import { MatListModule } from '@angular/material/list';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { MatButtonModule } from '@angular/material/button';
 import { SidenavListComponent } from './components/sidenav-list/sidenav-list.component';
+import { MoviesComponent } from './components/movies-dashboard/movies-dashboard.component';
+import { ActorsComponent } from './components/actors-dashboard/actors-dashboard.component';
+import { SearchComponent } from './components/subcomponents/search-input/search-input.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
-        SidenavListComponent
+        SidenavListComponent,
+        MoviesComponent,
+        ActorsComponent,
+        SearchComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
