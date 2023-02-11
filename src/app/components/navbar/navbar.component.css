@@ -1,38 +1,35 @@
-.mat-sidenav-container {
-    background: rgba(0, 0, 0, 0.08);
-  }
-  
-  .blank-grow {
-    flex: 1 1 auto;
-  }
+ul {
+  list-style-type: none;
+}
 
-  button {
-    color: white;
-    background-color: transparent;
-    border: 0px;
-    cursor: pointer;
-  }
+ul li a {
+  margin: 0px 15px 0 15px;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+}
 
-  mat-nav-list {
-    width: 300px;
-  }
+ul li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #4e9f3d;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
 
-  .links {  
-    margin-left: 25px;
-  }
+ul li a:hover {
+  color: #4e9f3d;
+}
 
-  .nav-button {
-    font-size: 18px;
-    padding: 0px 30px 0px 30px;
-  }
-
-  .nav-button a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .nav-button:hover a{
-    color: #4e9f3d;
-    transition: 0.5s;
-  }
-  
+ul li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}

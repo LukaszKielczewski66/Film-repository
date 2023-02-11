@@ -1,37 +1,22 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav>
-    <mat-nav-list>
-      <a mat-list-item>
-        <mat-icon mat-list-icon>live_tv</mat-icon>
-        <span mat-line class="links">Movies</span>
-      </a>
-
-      <a mat-list-item>
-        <mat-icon mat-list-icon>people</mat-icon>
-        <span mat-line class="links">Actors</span>
-      </a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-toolbar style="background-color: #191a19">
-    <p class="mat-headline-5" style="margin-top: 15px">
+<mat-toolbar style="background-color: #191a19">
+  <div>
+    <p class="mat-headline-5" style="margin-top: 20px">
       <span>MOVIES </span><span style="color: #4e9f3d"> HUB</span>
     </p>
-    <span class="blank-grow"></span>
-    <button
-      mat-icon-button
-      (click)="sidenav.open()"
-      fxHide="false"
-      fxHide.gt-sm
-    >
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
-    <div fxHide="false" fxHide.lt-md style="margin-right: 50px">
-      <button mat-button class="nav-button">
-        <a [routerLink]="'/movies'">Movies</a>
-      </button>
-      <button mat-button class="nav-button">
-        <a [routerLink]="'/actors'">Actors</a>
-      </button>
-    </div>
-  </mat-toolbar>
-</mat-sidenav-container>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+        <a routerLink="/movies">Movies</a>
+      </li>
+      <li>
+        <a routerLink="/actors">Actors</a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>

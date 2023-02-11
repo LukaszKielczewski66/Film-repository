@@ -10,11 +10,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { MatButtonModule } from '@angular/material/button';
+import { SidenavListComponent } from './components/sidenav-list/sidenav-list.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        SidenavListComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
