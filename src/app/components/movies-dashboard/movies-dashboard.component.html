@@ -1,3 +1,15 @@
 <div fxLayout="row" fxLayoutAlign="center center" class="search-container">
-  <search-input></search-input>
+  <search-input [label]="inputLabel"></search-input>
+</div>
+<div
+  fxLayout="row"
+  fxLayout.xs="column"
+  fxLayoutAlign.xs="center center"
+  fxLayoutGap="30px"
+>
+  <movie-card></movie-card>
+  <movie-card></movie-card>
+  <movie-card></movie-card>
+  <movie-card></movie-card>
+  <movie-card></movie-card>
 </div>

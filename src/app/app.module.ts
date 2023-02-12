@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RoutingModule } from './routing/routing.module'
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexModule, FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,6 +15,13 @@ import { SidenavListComponent } from './components/sidenav-list/sidenav-list.com
 import { MoviesComponent } from './components/movies-dashboard/movies-dashboard.component';
 import { ActorsComponent } from './components/actors-dashboard/actors-dashboard.component';
 import { SearchComponent } from './components/subcomponents/search-input/search-input.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MovieCard } from './components/subcomponents/movie-card/movie-card.component';
+
+
 
 @NgModule({
     declarations: [
@@ -22,7 +30,8 @@ import { SearchComponent } from './components/subcomponents/search-input/search-
         SidenavListComponent,
         MoviesComponent,
         ActorsComponent,
-        SearchComponent
+        SearchComponent,
+        MovieCard
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -37,6 +46,12 @@ import { SearchComponent } from './components/subcomponents/search-input/search-
         MatSidenavModule,
         MatListModule,
         MatButtonModule,
+        MatAutocompleteModule,
+        MatFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatInputModule,
+        MatCardModule
     ],
 })
 export class AppModule { }

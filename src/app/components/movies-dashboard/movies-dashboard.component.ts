@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MoviesComponent implements OnInit {
   constructor() { }
   
+  inputLabel = 'Search for a movie..'
+
   ngOnInit(): void {}
  
 }

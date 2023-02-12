@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'search-input',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
   constructor() { }
+
+  @Input() label = '';
+
+  myControl = new FormControl('');
+  options: string[] = ['One', 'Two', 'Three'];  
   
   ngOnInit(): void {}
  
