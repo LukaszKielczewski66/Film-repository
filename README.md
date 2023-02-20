@@ -4,7 +4,7 @@
 A simple application written in Angular.js, it is a repository of movies and actors, data is downloaded from the public API.
 
 ## Technologies
-* Angular.js
+* Angular
 * Angular Material
 
 ## Setup
