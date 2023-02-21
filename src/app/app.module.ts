@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RoutingModule } from './routing/routing.module'
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexModule, FlexLayoutModule } from '@angular/flex-layout';
@@ -36,6 +37,7 @@ import { MovieCard } from './components/subcomponents/movie-card/movie-card.comp
     providers: [],
     bootstrap: [AppComponent],
     imports: [
+        HttpClientModule,
         RoutingModule,
         BrowserModule,
         BrowserAnimationsModule,
