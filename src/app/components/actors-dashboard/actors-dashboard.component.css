@@ -1,0 +1,10 @@
+.search-container {
+    height: 100px;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

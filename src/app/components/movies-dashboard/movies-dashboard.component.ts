@@ -8,12 +8,12 @@ import { MoviesService } from './service/movies.service';
 })
 export class MoviesComponent implements OnInit {
   public movies: any;
+  public inputLabel: string = 'Search for a movie..'
+
   constructor(
     private moviesService: MoviesService
   ) { }
   
-  inputLabel: string = 'Search for a movie..'
-
   ngOnInit(): void {
     this.getMovies();
   }

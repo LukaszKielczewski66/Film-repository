@@ -1,3 +1,31 @@
 .mat-mdc-card {
-    width: 400px;
+    max-width: 400px;
+    margin: 35px;
+}
+
+img {
+    background-size: cover;
+    max-height: 500px;
+    margin-top: 10px;
+    border-top: 3px solid #1E5128;
+    border-bottom: 3px solid #1E5128;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+@media only screen and (min-width: 960px) {
+    .mat-mdc-card {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .mat-mdc-card {
+        width: 660px;
+    }
+    img {
+        height: 700px;
+    }
 }

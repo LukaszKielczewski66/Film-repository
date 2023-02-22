@@ -2,10 +2,13 @@
   <search-input [label]="inputLabel"></search-input>
 </div>
 <div
+  *ngIf="movies"
   fxLayout="row"
   fxLayout.xs="column"
   fxLayoutAlign.xs="center center"
-  fxLayoutGap="30px"
+  fxLayout.sm="column"
+  fxLayoutAlign.sm="center center"
+  class="main-content"
 >
-  <movie-card></movie-card>
+  <movie-card *ngFor="let movie of movies" [movie]="movie"></movie-card>
 </div>

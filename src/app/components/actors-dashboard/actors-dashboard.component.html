@@ -1,1 +1,15 @@
-<p>ACTORS DASHBOARD</p>
+<div fxLayout="row" fxLayoutAlign="center center" class="search-container">
+    <search-input [label]="inputLabel"></search-input>
+  </div>
+  <div
+    *ngIf="actors"
+    fxLayout="row"
+    fxLayout.xs="column"
+    fxLayoutAlign.xs="center center"
+    fxLayout.sm="column"
+    fxLayoutAlign.sm="center center"
+    class="main-content"
+  >
+    <movie-card *ngFor="let actor of actors" [movie]="actor"></movie-card>
+  </div>
+  
