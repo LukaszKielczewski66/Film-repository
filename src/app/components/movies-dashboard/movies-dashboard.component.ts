@@ -7,7 +7,8 @@ import { MoviesService } from './service/movies.service';
   styleUrls: ['./movies-dashboard.component.css'],
 })
 export class MoviesComponent implements OnInit {
-  public movies: any;
+  public movies: any = [];
+  public page = 1;
   public inputLabel: string = 'Search for a movie..'
 
   constructor(
@@ -15,16 +16,25 @@ export class MoviesComponent implements OnInit {
   ) { }
   
   ngOnInit(): void {
-    this.getMovies();
+    this.getMovies(this.page);
   }
  
-    public getMovies() {
-      this.moviesService.getAll().subscribe({
+    public getMovies(page: number) {
+      this.moviesService.getAll(page).subscribe({
         next: (res: any) => { 
-          this.movies = res.results;
+          if (res.results) {
+            res.results.forEach((movie: any) => {
+              this.movies.push(movie);
+            })
+          }
          },
         error: (err: any) => { console.log(err) }
       }
       )
+    }
+
+    public loadMovies() {
+      this.page++;
+      this.getMovies(this.page);
     }
 }

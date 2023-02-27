@@ -12,3 +12,6 @@
 >
   <movie-card *ngFor="let movie of movies" [movie]="movie"></movie-card>
 </div>
+<div fxLayoutAlign="center center">
+  <button mat-raised-button color="primary" (click)="loadMovies()">Load more</button>
+</div>

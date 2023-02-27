@@ -16,8 +16,10 @@ export class MoviesService {
     constructor(private httpClient: HttpClient) {}
 
 
-    public getAll() {
-        let params = new HttpParams().append('list', 'most_pop_movies');       
+    public getAll(page: number) {
+        let params = new HttpParams()
+        .append('list', 'most_pop_movies')
+        .append('page', page.toString());
         return this.httpClient.get(this.baseUrl, { headers: this.headers, params: params })
         .pipe(
             map(response => {
