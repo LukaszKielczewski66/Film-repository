@@ -32,7 +32,7 @@ import { MovieCard } from './components/subcomponents/movie-card/movie-card.comp
         MoviesComponent,
         ActorsComponent,
         SearchComponent,
-        MovieCard
+        MovieCard,
     ],
     providers: [],
     bootstrap: [AppComponent],

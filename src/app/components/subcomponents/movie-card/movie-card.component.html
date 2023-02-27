@@ -13,6 +13,12 @@
   <mat-card-content> </mat-card-content>
   <mat-card-actions>
     <span class="spacer"></span>
-    <button mat-raised-button color="warn">Check</button>
+    <button
+      mat-raised-button
+      color="primary"
+      [routerLink]="'/movie/' + movie.id"
+    >
+      Check
+    </button>
   </mat-card-actions>
 </mat-card>
